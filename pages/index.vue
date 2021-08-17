@@ -1,5 +1,7 @@
 <template>
-  <div class="component">sdfasd</div>
+  <div class="component">
+    <Hero />
+  </div>
 </template>
 
 <script>
