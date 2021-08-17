@@ -1,16 +1,20 @@
 <template>
-  <div class="component">
-    <Hero />
-    <LargeCardDisplay
-      v-for="cardInfo in largeCardInfo"
-      :key="cardInfo.id"
-      :cardsSection="cardInfo"
-    />
-    <SmallCardDisplay
-      v-for="cardInfo in smallCardInfo"
-      :key="cardInfo.id"
-      :cardSection="cardInfo"
-    />
+  <div>
+    <Nav />
+
+    <div class="component">
+      <Hero />
+      <LargeCardDisplay
+        v-for="cardInfo in largeCardInfo"
+        :key="cardInfo.id"
+        :cardsSection="cardInfo"
+      />
+      <SmallCardDisplay
+        v-for="cardInfo in smallCardInfo"
+        :key="cardInfo.id"
+        :cardSection="cardInfo"
+      />
+    </div>
   </div>
 </template>
 

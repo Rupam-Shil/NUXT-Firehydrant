@@ -16,12 +16,12 @@ export default {
 
 <style scoped>
 .card-container {
-  width: 24%;
-  height: 12.5rem;
   border-radius: 0.5rem;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
   cursor: pointer;
+  height: 12.5rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  width: 24%;
 }
 .image {
   width: 100%;
