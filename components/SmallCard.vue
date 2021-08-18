@@ -1,11 +1,11 @@
 <template>
-  <div class="card-container">
+  <NuxtLink :to="`/products/${card.id}`" class="card-container">
     <img
       :src="require(`@/assets/images/${card.image || fe7.jpg}`)"
       alt=""
       class="image"
     />
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
@@ -22,6 +22,7 @@ export default {
   margin-bottom: 1.5rem;
   overflow: hidden;
   width: 24%;
+  text-decoration: none;
 }
 .image {
   width: 100%;
