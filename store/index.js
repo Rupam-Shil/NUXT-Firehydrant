@@ -230,7 +230,12 @@ export const state = () => ({
   ]
 });
 
-export const mutations = () => {};
+export const mutations = {
+  addItem(state, payload) {
+    const toInsert = state.products.find(product => product.id == payload);
+    state.myRentals.push(toInsert);
+  }
+};
 
 export const getters = {
   getProductid: state => id => {
